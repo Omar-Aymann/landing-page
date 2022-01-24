@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page with Video in the background</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            TRANSFERLY
+        </div>
+
+        <ul class="nav-links">
+            <li>About</li>
+            <li>Pricing</li>
+            <li>Contact</li>
+        </ul>
+    </nav>
+    <div class="container">
+        <div class="vid">
+            <video id="vid1" src="vid1.mp4" autoplay muted></video>
+        </div>
+        <div class="textcon">
+            <span class="line"></span>
+            <h3>Ready To Transfer Your Data</h3>
+            <h3>Choose TRANSFERLY</h3>
+            <span class="line"></span>
+
+            <button type="submit">See More</button>
+        </div>
+    </div>
+
+
+
+    <script>
+        var video = document.getElementById('vid1')
+
+        // When the 'ended' event fires
+        video.addEventListener('ended', function(){
+        // Reset the video to 0
+        video.currentTime = 10;
+        // And play again
+        video.play();
+        });
+    </script>
+</body>
+</html>
