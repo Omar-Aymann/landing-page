@@ -19,7 +19,7 @@
 }
 .navbar .logo
 {
-    font-size: 2.5vw;
+    font-size: 2.3vw;
 
 }
 .nav-links
@@ -30,7 +30,7 @@
 }
 .nav-links li
 {
-    font-size: 1.3vw;
+    font-size: 1.1vw;
     padding: 0 2vw;
     cursor: pointer;
     position: relative;
@@ -94,7 +94,7 @@ video
     align-items: center;
     z-index: 2;
     color: #fff;
-    font-size: 2.8vw;
+    font-size: 2.4vw;
 }
 .textcon button
 {
@@ -115,7 +115,10 @@ video
     background-color: #000;
     color: #fff;
 }
-
+.textcon h3
+{
+    padding: 10px 0;
+}
 @media (max-width: 900px) {
     .navbar .logo
     {
@@ -139,10 +142,7 @@ video
         text-align: center;
         font-size: 1.2em;
     }
-    .textcon h3
-    {
-        padding: 10px 0;
-    }
+
     .textcon button
 {
     width: 20.4vw;
